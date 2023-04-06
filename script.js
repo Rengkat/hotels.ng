@@ -29,3 +29,10 @@ profile.addEventListener("click", () => {
     profileDropdown.style.display = "none";
   }
 });
+
+document.addEventListener("click", (e) => {
+  if (!contact.contains(e.target)) {
+    contactDropdown.style.display = "none";
+  }
+  contactDropdown.style.display = "block";
+});
