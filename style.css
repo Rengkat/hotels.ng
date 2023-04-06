@@ -1,0 +1,673 @@
+:root {
+  --blue: #00aeff;
+  --white: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  box-sizing: border-box;
+  color: #4f4f4f;
+}
+.conainer {
+  width: 100%;
+  box-sizing: border-box;
+}
+header img {
+  width: 80%;
+  padding-top: 0.4rem;
+}
+nav {
+  height: 60px;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 0 2rem;
+  /* color: var(--white); */
+  color: black;
+  /* overflow: hidden; */
+}
+.sub-nav {
+  width: 35%;
+  display: flex;
+}
+.whatapp {
+  padding: 1rem;
+  width: 10rem;
+  border-right: 1px solid var(--white);
+}
+#whatsapp-img-whatapp {
+  width: 2rem;
+  height: 2rem;
+}
+.whatsapp-img {
+  width: 2rem;
+  height: 2rem;
+}
+.contact {
+  min-width: 13rem;
+  padding: 1rem;
+  border-right: 1px solid var(--white);
+  position: relative;
+}
+.contact .top-info {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+}
+.contact-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  position: absolute;
+  left: 0%;
+}
+.contact .call-us {
+  width: 100%;
+  background-color: #084482;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.2rem 0.2rem 2.5rem;
+}
+.cont-arw {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.call-us p:first-child {
+  font-size: 10px;
+  color: #00aeff;
+  /* padding: 2px 0; */
+}
+.contact .dropdown-container {
+  display: none;
+  width: 13rem;
+  margin: 1rem auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  position: absolute;
+  z-index: 20;
+}
+.contact .dropdown {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.contact .dropdown:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.dropdown .fa-solid,
+.fa-brands {
+  color: var(--blue);
+}
+.currency {
+  min-width: 5rem;
+  padding: 0.6rem;
+  border-right: 1px solid var(--white);
+  position: relative;
+}
+.currency .top-info {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--white);
+}
+#flag {
+  width: 50%;
+}
+.currency-dropdown-container {
+  display: none;
+  width: 14rem;
+  margin: 1rem auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  position: absolute;
+  top: 80%;
+  left: -180%;
+  z-index: 20;
+}
+.currency-dropdown-container p {
+  padding: 0.5rem;
+}
+.currency-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.currency-dropdown:hover {
+  background-color: #00aeff;
+  color: #ffffff;
+  cursor: pointer;
+}
+.profile {
+  padding: 0.8rem;
+  position: relative;
+}
+.user-icon {
+  background-color: var(--white);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.fa-user {
+  color: var(--blue);
+}
+.profile .top-info {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--white);
+}
+.profile-dropdown {
+  display: none;
+  width: 12rem;
+  margin: 1rem auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 0.7rem;
+  position: absolute;
+  top: 75%;
+  left: -60%;
+  z-index: 20;
+}
+.profile-dropdown button {
+  width: 100%;
+  background-color: var(--blue);
+  border-radius: 7px;
+  color: var(--white);
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: none;
+}
+#sign-up a {
+  text-decoration: none;
+}
+.hero {
+  height: 50vh;
+  background-image: url("/images/hero.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #3939397a;
+}
+.hero-writ-up {
+  position: absolute;
+  z-index: 5;
+  color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.inputs {
+  background-color: var(--white);
+  width: 72%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: -5rem auto 0 auto;
+  padding: 2.8rem 0;
+  top: 0;
+  z-index: 5;
+  position: sticky;
+  box-shadow: 2px 10px 34px -17px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 2px 10px 34px -17px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 2px 10px 34px -17px rgba(0, 0, 0, 0.34);
+}
+.search {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  padding: 2px 1rem;
+  border: 1px gray solid;
+  border-radius: 5px;
+}
+.calender {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  padding: 2px 1rem;
+  border: 1px gray solid;
+  border-radius: 5px;
+}
+.search-icon,
+.calender-icon {
+  width: 10%;
+}
+#search,
+#calender {
+  padding: 10px;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  width: 20%;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+.suggested-destination {
+  width: 70%;
+  margin: 4.5rem auto;
+  text-align: center;
+  /* color: ; */
+}
+.suggested-destination h1 {
+  padding: 0.5rem 0rem;
+}
+.suggested-destination p {
+  font-size: larger;
+}
+
+.line {
+  background-color: var(--blue);
+  height: 3px;
+  width: 2.4rem;
+  margin: 1rem auto;
+}
+.hotel-links-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.hotels-link {
+  width: 8rem;
+  border: 2px solid var(--blue);
+  border-radius: 3px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 1s;
+  margin-top: 2rem;
+}
+.hotels-link a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.hotels-link:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.hotels-link:hover a {
+  color: var(--white);
+}
+.hotels-cards-container h2 {
+  padding: 0.5rem 0;
+}
+.hotels-cards-container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+.card-container .card {
+  height: 40vh;
+  margin-top: 1rem;
+  border: 1px solid grey;
+  position: relative;
+}
+.card-container .card img {
+  width: 100%;
+  height: 28vh;
+}
+.card-container .card .img-container {
+  position: relative;
+  height: 28vh;
+}
+/* Hover should display overlay */
+/* .card-container
+  .card
+  img:hover
+  .card-container
+  .card
+  .img-container::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #000000af;
+} */
+
+/* .card-container .card img:hover .card img::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: black;
+} */
+.discount {
+  width: 10rem;
+  padding: 4px;
+  color: var(--white);
+  position: absolute;
+  background-color: rgb(255, 123, 0);
+  top: 3%;
+  left: -3%;
+}
+.deco {
+  background-color: rgb(163, 80, 3);
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(40deg);
+  position: absolute;
+  top: 9.5%;
+  left: -2.1%;
+  z-index: -1;
+}
+.card .description {
+  text-align: left;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+}
+.card .description a {
+  text-decoration: none;
+  color: var(--blue);
+  display: block;
+}
+.card .description a:nth-child(2) {
+  color: #4f4f4f;
+}
+
+.popular-cities-section {
+  width: 70%;
+  text-align: center;
+  margin: 5rem auto;
+}
+.popular-cities-section h2 {
+  padding: 0.5rem 0;
+}
+.cities-cards-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.city-card {
+  position: relative;
+  border-radius: 10px;
+}
+.city-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.city-card .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+.city-card .description a {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.city-card::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.482);
+  border-radius: 7px;
+}
+.city-btn-container {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.452);
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 0.3s;
+}
+.city-card:hover .city-btn-container {
+  opacity: 1;
+}
+.city-btn-container button {
+  padding: 0.8rem;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 1rem;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+.city-btn-container button:hover {
+  background-color: #00aeff;
+}
+.city-lists {
+  width: 70%;
+  margin: 5rem auto;
+  text-align: center;
+}
+.city-lists h2 {
+  padding: 0.5rem 0;
+}
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+}
+.hotels {
+  text-align: left;
+}
+.hotels a:first-child {
+  color: var(--blue);
+  display: block;
+  font-weight: 700;
+}
+.hotels a {
+  text-decoration: none;
+  color: #4f4f4f;
+  padding: 0.2rem 0;
+}
+.news-letter {
+  background-color: #fafafafa;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  line-height: 2.5rem;
+  padding: 2rem 0;
+}
+.news-letter input {
+  width: 30%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  outline: none;
+  margin: 1rem 0.5rem;
+}
+.news-letter input:focus {
+  border: 1px solid var(--blue);
+}
+.news-letter button {
+  padding: 0.7rem 2rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+.features-companies {
+  width: 70%;
+  margin: 5rem auto;
+  text-align: center;
+  line-height: 3rem;
+}
+.companies-logos {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.companies-logos img {
+  width: 10rem;
+}
+.add-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+.dowload {
+  background-color: #eff8fb;
+  margin: 5rem 0 0 0;
+  padding-top: 5rem;
+}
+.dowload-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.dowload-container h1 {
+  font-size: 4rem;
+  color: #2196f3;
+}
+.dowload-container h3 {
+  padding: 0.8rem 0;
+  font-size: 1.7rem;
+}
+.logo2 {
+  margin-top: 1rem;
+}
+.email-unlock {
+  background-color: #084482;
+  padding: 1rem;
+}
+.lock-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--white);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.email-unlock-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.unlock-write-up h3 {
+  color: var(--white);
+}
+.unlock-write-up p {
+  color: var(--blue);
+}
+footer {
+  width: 70%;
+  margin: 1rem auto;
+}
+.unlock-input {
+  display: flex;
+}
+.unlock-input input {
+  display: flex;
+  width: 15rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.unlock-input button {
+  width: 12rem;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  padding-bottom: 1rem;
+}
+.footer-links p {
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--blue);
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.footer-footer-left {
+  display: flex;
+  gap: 1rem;
+}
+.hori-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+.footer-footer-left ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.fa-twitter,
+.fa-facebook-f,
+.fa-instagram {
+  color: #4f4f4f;
+}
+.footer-footer-right {
+  display: flex;
+}
+.footer-footer-right img {
+  width: 30%;
+  margin-top: -1rem;
+}
